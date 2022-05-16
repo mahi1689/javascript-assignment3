@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+
+<body>
+<script>
+  function rotate()
+  {
+    var a =[1,2,3,4,5,6];
+    
+    var b=2;//defines how many number of times array should be rotated
+   
+   document.write("Original array: ",a+"<br />");
+   
+     //Rotate the given array by n times toward left  
+   for(var i=0;i<b;i++)
+   {
+     var j,first;
+     first=a[0]; //Stores the first element of the array  
+     
+     for(var j=0;j<a.length-1;j++)
+     {
+       a[j]=a[j+1];
+     }
+     a[j]=first; //First element of array will be added to the end
+   }
+   
+     document.write("Rotated array :",a+" ");
+  
+  }
+  rotate();
+</script>
+</body>
+
+</html>

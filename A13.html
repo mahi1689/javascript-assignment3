@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+
+<body>
+<script>
+  function add()
+  {
+    var ar=[1,2,3,4,5];
+    var sum=0,sum1=0,sum2=0;
+    var j=0,k=0;
+    
+    document.write("Array Elements are: ",ar+"<br />")
+    
+    for(var i=0; i<ar.length; i++  )
+    {
+      sum=sum+ar[i];
+      
+    }
+    document.write("Sum of array using for loop: ", sum+"<br>");
+  
+  
+  
+  
+  
+    while(j<ar.length)
+    {
+      sum1=sum1+ar[j];
+      j++;
+    }
+    document.write("sum of array using while loop:",sum+"<br />");
+  
+  
+  
+  
+  
+  do{
+    sum2=sum2+ar[k];
+    k++;
+    
+  }
+  while(k<ar.length);
+  document.write("Sum of array using do-while loop: ",sum2);
+  
+  }
+  add();
+  
+</script>
+</body>
+
+</html>
